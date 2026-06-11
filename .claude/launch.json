@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "demo-massage",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "D:/claude-custom-projects/Ai-Editor-Sites/demo-massage-therapist", "-l", "3999"],
+      "port": 3999
+    }
+  ]
+}

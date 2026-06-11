@@ -1,0 +1,69 @@
+/* =============================================
+   THEME: Warm Mocha
+   Rich, inviting — massage, bodywork, holistic wellness
+   Font Pairing: Friendly (Nunito + Open Sans)
+   ============================================= */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* --- Theme Variables --- */
+:root {
+  /* Colour Palette */
+  --color-primary: #6B4226;
+  --color-primary-light: #8B5E3C;
+  --color-primary-dark: #4A2E1A;
+  --color-secondary: #C8976B;
+  --color-secondary-light: #D4AB85;
+  --color-secondary-dark: #A07848;
+  --color-accent: #B8704A;
+  --color-accent-light: #CC8A6E;
+
+  --color-bg: #FAF7F4;
+  --color-bg-alt: #F0EAE3;
+  --color-bg-dark: #2C1E14;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F5F0EB;
+
+  --color-text: #3A2E26;
+  --color-text-light: #6B5D53;
+  --color-text-inverse: #FAF7F4;
+  --color-text-heading: #2C1E14;
+
+  --color-border: #D9CFC5;
+  --color-border-light: #EAE3DA;
+
+  --color-success: #5A7D4A;
+  --color-error: #B84A3A;
+
+  /* Typography */
+  --font-heading: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Heading Size Overrides */
+  --text-h1-desktop: 2.75rem;
+  --text-h2-desktop: 2.15rem;
+  --text-h3-desktop: 1.6rem;
+}
+
+/* --- Theme Overrides --- */
+
+/* Contact page headings — cap at --text-xl */
+.contact-info h2,
+.contact-form-wrap .card h2,
+.contact-form-card h2 {
+  font-size: var(--text-xl);
+}
+
+/* Testimonial stars centering on centered sections */
+.text-center .testimonial__stars,
+.testimonial--standalone .testimonial__stars {
+  justify-content: center;
+}
+
+/* Portrait image — taller on desktop */
+@media (min-width: 768px) {
+  .intro__image-wrap {
+    min-height: 550px;
+  }
+}
