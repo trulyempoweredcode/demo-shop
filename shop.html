@@ -126,15 +126,22 @@
     </section>
     <!-- /SECTION: page-header -->
 
-                        <!-- SECTION: shop-listing -->
+                            <!-- SECTION: shop-listing -->
     <section class="section reveal">
       <div class="container">
+        <div class="shop-filters">
+          <button class="shop-filter shop-filter--active" data-category="all">All</button>
+          <button class="shop-filter" data-category="Accessories">Accessories</button>
+          <button class="shop-filter" data-category="PC">PC</button>
+        </div>
+
         <div class="grid grid--3 shop-grid">
-          <a class="product-card" href="shop/keyboard.html">
+          <a class="product-card" data-category="Accessories" href="shop/keyboard.html">
             <div class="product-card__image-wrap">
               <img class="product-card__image" src="images/home-portrait.jpg" alt="Keyboard" loading="lazy">
             </div>
             <div class="product-card__body">
+            <p class="product-card__category">Accessories</p>
               <h2 class="product-card__title">Keyboard</h2>
               <p class="product-price"><span class="product-price__amount">£99.00</span></p>
             </div>
